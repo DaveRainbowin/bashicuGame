@@ -8,11 +8,11 @@ function matrixUp() {
 function maxMatrix() {
   for (i = 0; i <= factor; i++) {
     if (bms[bms.length - factor] == i) {
-      for (j = 1; j <= factor; j++) {
-        bms.pop();
+      while (bms[bms.length-1] == 0) {
+        bms.pop() 
       }
       if (bms[bms.length - 1] != 0) {
-        bms.unshift(0);
+        bms.push(0)
       }
       bms.push(i + 1);
     }
