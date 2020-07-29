@@ -5,6 +5,10 @@ This is a game based on [Ordinal Markup](https://patcailmemer.github.io/Ordinal-
 ## Project Info
 This project was started on 2020-07-27, and was announced publicly on the same day.
 
+### Inspirations
+[This BMS game](https://hypcos.github.io/incremental-googology/Tetration/) by hyp cos
+[Ordinal Markup](https://patcailmemer.github.io/Ordinal-Markup/) by PatcailMemer
+
 ## Contributors
 DaveRainbowin (Main Developer, started 2020-07-27)
 theMkeyholder (Co-Developer, started 2020-07-28)
