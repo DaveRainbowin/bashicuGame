@@ -7,4 +7,4 @@ This project was started on 2020-07-27, and was announced publicly on the same d
 
 ## Contributors
 DaveRainbowin (Main Developer, started 2020-07-27)
-theMkeyholder (Developer, started 2020-07-28)
+theMkeyholder (Co-Developer, started 2020-07-28)
