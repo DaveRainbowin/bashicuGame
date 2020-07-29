@@ -6,17 +6,7 @@ function matrixUp() {
   bms.push(0);
 }
 function maxMatrix() {
-  for (i = 0; i <= factor; i++) {
-    if (bms[bms.length - factor] == i) {
-      while (bms[bms.length-1] == 0) {
-        bms.pop() 
-      }
-      if (bms[bms.length - 1] != 0) {
-        bms.push(0)
-      }
-      bms.push(i + 1);
-    }
-  }
+  if(bms.slice(bms.length-factor, bms.length).join(",")=="0,0,0,0,0,0,0,0,0,0") {while(bms[bms.length-1] == 0) bms.pop(); bms.push(0); bms.push(1)}
 }
 function displayMatrix() {
   display = ``;
