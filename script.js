@@ -18,7 +18,7 @@ function maxMatrix() {
   function getBMSArrays(a, b, c) {
     return a.concat(Array(c).fill(b));
   }
-  for (i in Array(9)) {
+  for (let i in Array(9)) {
     checkVals(getBMSArrays([0], 1, i),getBMSArrays([0], 1, i+1)) 
   }
 }
