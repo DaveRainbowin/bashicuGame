@@ -1,5 +1,4 @@
 var bms = [0];
-var display = "(0)";
 var factor = 10;
 setInterval(update, 100);
 function matrixUp() {
@@ -16,27 +15,15 @@ function checkVals(a,b) {
   }
 }
 function maxMatrix() {
-  checkVals([0], [0,1]);
-  checkVals([0,1], [0,1,1]);
-  checkVals([0,1,1], [0,1,1,1]);
-  checkVals([0,1,1,1], [0,1,1,1,1]);
-  checkVals([0,1,1,1,1], [0,1,1,1,1,1]);
-  checkVals([0,1,1,1,1,1], [0,1,1,1,1,1,1]);
-  checkVals([0,1,1,1,1,1,1], [0,1,1,1,1,1,1,1]);
-  checkVals([0,1,1,1,1,1,1,1], [0,1,1,1,1,1,1,1,1]);
-  checkVals([0,1,1,1,1,1,1,1,1], [0,1,1,1,1,1,1,1,1,1]);
-  checkVals([0,1,1,1,1,1,1,1,1,1], [0,1,2]);
-}
-function displayMatrix() {
-  display = ``;
-  for (i = 0; i <= bms.length -1; i++) {
-    display = display.concat("", `(${bms[i]})`);
+  function getBMSArrays(a, b, c) {
+    return a.concat(Array(c).fill(b));
+  }
+  for (i in Array(9)) {
+    checkVals(getBMSArrays([0], 1, i),getBMSArrays([0], 1, i+1)) 
   }
 }
 function update() {
   displayMatrix();
-  get("bms").innerHTML = display;
+  $("bms").innerHTML = "("+bms.join(")(")+")";
 }
-function get(id) {
-  return document.getElementById(id);
-}
+$ = _ => document.getElementById(_);;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
