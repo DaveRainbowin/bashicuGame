@@ -6,7 +6,7 @@ function matrixUp() {
   bms.push(0);
 }
 function maxMatrix() {
-  if(bms.slice(bms.length-factor, bms.length).join(",")=="0,0,0,0,0,0,0,0,0,0") {while(bms[bms.length-1] == 0) bms.pop(); bms.push(0); bms.push(1)}
+  if(bms.slice(bms.length-factor, bms.length).join(",")=="0,".repeat(factor-1)+"0") {while(bms[bms.length-1] == 0) bms.pop(); bms.push(0); bms.push(1)}
 }
 function displayMatrix() {
   display = ``;
