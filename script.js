@@ -17,10 +17,10 @@ function checkVals(a,b) {
 function maxMatrix() {
   let temp = [0]
   let temp2 = [0,1]
-  for(i in Array(8)) {
+  for(let i in Array(8)) {
     checkVals(temp,temp2)
-    temp = temp.concat([1])
-    temp2 = temp.concat([1])
+    temp.push(1)
+    temp2.push(1)
   }
 }
 function update() {
